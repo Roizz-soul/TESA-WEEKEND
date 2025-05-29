@@ -1,0 +1,16 @@
+Post a request
+curl -X POST https://jsonplaceholder.typicode.com/posts -H "Content-type:application/json" -d "{\"name\":\"Temi\",\"Hob
+by\":\"Baskettball\"}"
+
+Get a request
+curl https://jsonplaceholder.typicode.com/posts/100
+
+Put a request
+curl -X PUT https://jsonplaceholder.typicode.com/posts/100 \\ -H "Content-type: application/json" \
+-d '{"name":"Temiloluwa Odunuga updated","Hobby":"Loves to play Baskettball updated"}'
+
+Patch a request
+curl -X PATCH https://jsonplaceholder.typicode.com/posts/1 -H "Content-type: application/json" -d '{"name":"Temi Updated"}'
+
+Delete a request
+curl -X Delete https://jsonplaceholder.typicode.com/posts/100
