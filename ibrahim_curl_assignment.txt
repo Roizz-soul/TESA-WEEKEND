@@ -1,0 +1,22 @@
+Create:
+curl -X POST https://api-football-v1.p.rapidapi.com/v3/teams
+     -H "Content-type: application/json"
+     -d '{"key": "value"}'
+
+Read:
+curl -X GET https://api-football-v1.p.rapidapi.com/v3/teams/statistics?league=39&season=2020&team=33
+
+
+Update:
+curl -X PUT https://api-football-v1.p.rapidapi.com/v3/teams
+     -H "Content-type: application/json"
+     -d '{"key": "value"}'
+
+curl -X PATCH https://api-football-v1.p.rapidapi.com/v3/teams
+     -H "Content-type: application/json"
+     -d '{"key": "value"}'
+
+Delete:
+Read:
+curl -X DELETE https://api-football-v1.p.rapidapi.com/v3/teams/statistics?league=39&season=2020&team=33
+

@@ -1,0 +1,64 @@
+C:\Users\victo>curl "https://datausa.io/api/data?drilldowns=Nation&measures=Population"
+{"data":[{"ID Nation":"01000US","Nation":"United States","ID Year":2023,"Year":"2023","Population":332387540,"Slug Nation":"united-states"},{"ID Nation":"01000US","Nation":"United States","ID Year":2022,"Year":"2022","Population":331097593,"Slug Nation":"united-states"},{"ID Nation":"01000US","Nation":"United States","ID Year":2021,"Year":"2021","Population":329725481,"Slug Nation":"united-states"},{"ID Nation":"01000US","Nation":"United States","ID Year":2020,"Year":"2020","Population":326569308,"Slug Nation":"united-states"},{"ID Nation":"01000US","Nation":"United States","ID Year":2019,"Year":"2019","Population":324697795,"Slug Nation":"united-states"},{"ID Nation":"01000US","Nation":"United States","ID Year":2018,"Year":"2018","Population":322903030,"Slug Nation":"united-states"},{"ID Nation":"01000US","Nation":"United States","ID Year":2017,"Year":"2017","Population":321004407,"Slug Nation":"united-states"},{"ID Nation":"01000US","Nation":"United States","ID Year":2016,"Year":"2016","Population":318558162,"Slug Nation":"united-states"},{"ID Nation":"01000US","Nation":"United States","ID Year":2015,"Year":"2015","Population":316515021,"Slug Nation":"united-states"},{"ID Nation":"01000US","Nation":"United States","ID Year":2014,"Year":"2014","Population":314107084,"Slug Nation":"united-states"},{"ID Nation":"01000US","Nation":"United States","ID Year":2013,"Year":"2013","Population":311536594,"Slug Nation":"united-states"}],"source":[{"measures":["Population"],"annotations":{"source_name":"Census Bureau","source_description":"The American Community Survey (ACS) is conducted by the US Census and sent to a portion of the population every year.","dataset_name":"ACS 5-year Estimate","dataset_link":"http://www.census.gov/programs-surveys/acs/","table_id":"B01003","topic":"Diversity","subtopic":"Demographics"},"name":"acs_yg_total_population_5","substitutions":[]}]}
+
+
+
+C:\Users\victo>curl -i "https://datausa.io/api/data?drilldowns=Nation&measures=Population"
+HTTP/1.1 200 OK
+Date: Thu, 29 May 2025 17:43:49 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-DNS-Prefetch-Control: off
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Content-Language: en
+ETag: W/"767-0lUK6HBNm90Y0NUHynrkw89nIuw"
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, POST, OPTIONS
+X-Cache-Key: gary-app.datausa.io/api/data?drilldowns=Nation&measures=Population
+Cache-Control: public, max-age=31536000
+Referrer-Policy: no-referrer
+X-Cache-Date: Tue, 20 May 2025 16:48:06 GMT
+X-Cache-Status: BYPASS
+CF-Cache-Status: HIT
+Age: 780943
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=ziiLH54u7pAh0y1k1%2BHaAZOv5qgTnmkPQB0pe1nh1PP1tR66Ngkan5RkwIuEGl%2B%2F8LYGklClaq2JVONCllbsxJ3CF52MTtqIFlXRzSqGOAZf%2Fnil2fWtnJhz%2BO4%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 9477cbd41c9e1520-LHR
+server-timing: cfL4;desc="?proto=TCP&rtt=120026&min_rtt=110331&rtt_var=33437&sent=5&recv=8&lost=0&retrans=0&sent_bytes=3123&recv_bytes=683&delivery_rate=38031&cwnd=252&unsent_bytes=0&cid=2e79e38dcd61c224&ts=180&x=0"
+
+{"data":[{"ID Nation":"01000US","Nation":"United States","ID Year":2023,"Year":"2023","Population":332387540,"Slug Nation":"united-states"},{"ID Nation":"01000US","Nation":"United States","ID Year":2022,"Year":"2022","Population":331097593,"Slug Nation":"united-states"},{"ID Nation":"01000US","Nation":"United States","ID Year":2021,"Year":"2021","Population":329725481,"Slug Nation":"united-states"},{"ID Nation":"01000US","Nation":"United States","ID Year":2020,"Year":"2020","Population":326569308,"Slug Nation":"united-states"},{"ID Nation":"01000US","Nation":"United States","ID Year":2019,"Year":"2019","Population":324697795,"Slug Nation":"united-states"},{"ID Nation":"01000US","Nation":"United States","ID Year":2018,"Year":"2018","Population":322903030,"Slug Nation":"united-states"},{"ID Nation":"01000US","Nation":"United States","ID Year":2017,"Year":"2017","Population":321004407,"Slug Nation":"united-states"},{"ID Nation":"01000US","Nation":"United States","ID Year":2016,"Year":"2016","Population":318558162,"Slug Nation":"united-states"},{"ID Nation":"01000US","Nation":"United States","ID Year":2015,"Year":"2015","Population":316515021,"Slug Nation":"united-states"},{"ID Nation":"01000US","Nation":"United States","ID Year":2014,"Year":"2014","Population":314107084,"Slug Nation":"united-states"},{"ID Nation":"01000US","Nation":"United States","ID Year":2013,"Year":"2013","Population":311536594,"Slug Nation":"united-states"}],"source":[{"measures":["Population"],"annotations":{"source_name":"Census Bureau","source_description":"The American Community Survey (ACS) is conducted by the US Census and sent to a portion of the population every year.","dataset_name":"ACS 5-year Estimate","dataset_link":"http://www.census.gov/programs-surveys/acs/","table_id":"B01003","topic":"Diversity","subtopic":"Demographics"},"name":"acs_yg_total_population_5","substitutions":[]}]}
+
+C:\Users\victo>curl -X POST -d "userId=587&title=Software Engineering&body=APIs and Types." https://jsonplaceholder.typicode.com/posts
+{
+  "userId": "587",
+  "title": "Software Engineering",
+  "body": "APIs and Types.",
+  "id": 101
+
+
+C:\Users\victo>curl -X PUT -d "userId=587&title=Software Engineering&body=APIs and Types." https://jsonplaceholder.typicode.com/posts/1
+{
+  "userId": "587",
+  "title": "Software Engineering",
+  "body": "APIs and Types.",
+  "id": 1
+
+
+C:\Users\victo>curl -X PATCH -d "userId=587&title=Software Engineering&body=APIs and Types Platforms." https://jsonplaceholder.typicode.com/posts/1
+{
+  "userId": "587",
+  "id": 1,
+  "title": "Software Engineering",
+  "body": "APIs and Types Platforms."
+}
+
+
+C:\Users\victo>curl -X DELETE https://jsonplaceholder.typicode.com/posts/1
+{}
+

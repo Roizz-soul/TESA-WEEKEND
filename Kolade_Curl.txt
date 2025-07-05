@@ -1,0 +1,20 @@
+GET Request:
+curl https://jsonplaceholder.typicode.com/posts
+
+POST Request:
+curl -X POST https://jsonplaceholder.typicode.com/posts \
+     -H "Content-Type: application/json" \
+     -d '{"title": "My Test Post", "body": "This is the content", "userId": 1}'
+
+PUT Request:
+curl -X PUT https://jsonplaceholder.typicode.com/posts/1 \
+     -H "Content-Type: application/json" \
+     -d '{"id": 1, "title": "Updated Post", "body": "Updated content", "userId": 1}'
+
+PATCH Request:
+curl -X PATCH https://jsonplaceholder.typicode.com/posts/1 \
+     -H "Content-Type: application/json" \
+     -d '{"title": "Partially Updated Title"}'
+
+DELETE Request:
+curl -X DELETE https://jsonplaceholder.typicode.com/posts/1

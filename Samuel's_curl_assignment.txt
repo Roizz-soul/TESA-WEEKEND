@@ -1,0 +1,15 @@
+Post request
+curl -X POST https://reqres.in/api/users -H "Content-Type: application/json" -H "x-api-key: reqres-free-v1" -d "{\"name\":\"Samuel\",\"job\":\"developer\"}"
+
+Get request
+curl https://reqres.in/api/users/955
+
+Put request
+curl -X PUT https://reqres.in/api/users/955 -H "Content-Type: application/json" -H "x-api-key: reqres-free-v1" -d "{\"name\":\"Adeolu\",\"job\":\"developer\"}"
+
+Patch request
+curl -X PATCH https://reqres.in/api/users/955 -H "Content-Type: application/json" -H "x-api-key: reqres-free-v1" -d "{\"name\":\"Samuel\"}"
+
+Delete request
+curl -X DELETE https://reqres.in/api/users/955 -H "x-api-key: reqres-free-v1" 
+
